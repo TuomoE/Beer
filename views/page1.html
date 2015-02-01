@@ -1,0 +1,39 @@
+<div class="container">
+    <div class="header"></div>
+    <div>
+        <p class="page1Text">Your Beer is my beer. You give the judgement, and read others!</p>
+    </div>
+    <form class="page1Form">
+        <fieldset class="page1Form">
+            <legend id="legend">Apply your opinion</legend>
+            <label>Select the beer type</label><br>
+            <select ng-options="type for type in types" ng-model="beerType">
+                
+            </select><br>
+            <label>Beer name</label><br>
+            <input type="text" ng-model="beerName"/><br>
+            <label>Where did you enjoyed it?</label><br>
+            <input type="text" ng-model="location"/><br>
+            <label>Give your free speech about the product</label><br>
+            <textarea ng-model="opinion"></textarea><br>
+            <button ng-click='send()'>Send it!</button><br>
+            <p class="page1Text">Click the button to view other people comments about they have been tasted!</p>
+            <button ng-click='seeAll()'>Beer talk</button><br>
+        </fieldset>
+    </form>
+</div>
+
+
+
+<!--
+    <div class="ui-field-contain">
+            <label for="select-choice-1" class="select">Shipping method:</label>
+            <select name="select-choice-1" id="select-choice-1">
+                <option value="standard">Standard: 7 day</option>
+                <option value="rush">Rush: 3 days</option>
+                <option value="express">Express: next day</option>
+                <option value="overnight">Overnight</option>
+            </select>
+
+
+-->
